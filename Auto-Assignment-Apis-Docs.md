@@ -3,7 +3,7 @@
 
 ## Endpoints
 
-### Get google merchant feed setup
+### Get Settings
 - **URL**: `api/crm/settings`
 - **Method**: GET
 - **Headers**: 
@@ -182,13 +182,12 @@
     }
     ```
 
-### Create new google merchant feed
+### Setup Auto-Assign
 - **URL**: `api/crm/settings/auto-assignment`
 - **Method**: POST
 - **Headers**: 
   - `Authorization`: `Bearer <token>`
-- **Responses**:
-  - **200 OK**:
+- **Request Body**:
     ```json
     {
     	"auto_assign_lead" : {
@@ -210,11 +209,6 @@
     					"id": 2966,
     					"source": "ebay",
     					"status": false
-    				},
-    				{
-    					"id": 1144,
-    					"source": "FB",
-    					"status": true
     				}
     			]
     		},
@@ -232,11 +226,6 @@
     				{
     					"id": 2966,
     					"source": "ebay",
-    					"status": true
-    				},
-    				{
-    					"id": 1144,
-    					"source": "FB",
     					"status": true
     				}
     			]
@@ -256,11 +245,6 @@
     					"id": 2966,
     					"source": "ebay",
     					"status": false
-    				},
-    				{
-    					"id": 1144,
-    					"source": "FB",
-    					"status": true
     				}
     			]
     		}													
@@ -277,12 +261,6 @@
     			"status" : true,
     			"first_name" : "Achraf",
     			"last_name" : "T T"
-        	},
-    		  {
-    			"id" : 1097,
-    			"status" : true,
-    			"first_name" : "Ahmed",
-    			"last_name" : "M M"
         	}
     		]
     	},
@@ -302,12 +280,6 @@
                 "status": true,
                 "last_name": "",
                 "first_name": "kokoko"
-            },
-    			{
-                "id": 2,
-                "status": true,
-                "last_name": "",
-                "first_name": "bobobo"
             }
     		],
     		 "salespersons_randomly": [
@@ -319,5 +291,13 @@
             }
     			 ]
     	}
+    }
+    ```
+- **Responses**:
+  - **200 OK**:
+    ```json
+    Response 1
+    {
+      The same response of : api/crm/settings
     }
     ```
