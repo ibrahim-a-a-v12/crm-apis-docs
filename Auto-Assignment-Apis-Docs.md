@@ -300,7 +300,7 @@
     {
       The same response of : api/crm/settings
     }
-    Response 1
+    Response 2
     {
     	"status": {
     		"code": 400,
