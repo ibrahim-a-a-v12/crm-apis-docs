@@ -181,4 +181,143 @@
     	}
     }
     ```
-    
+
+### Create new google merchant feed
+- **URL**: `api/crm/settings/auto-assignment`
+- **Method**: POST
+- **Headers**: 
+  - `Authorization`: `Bearer <token>`
+- **Responses**:
+  - **200 OK**:
+    ```json
+    {
+    	"auto_assign_lead" : {
+    		"active" : true,
+    		"priority" : false,
+    		"randomly" : true,
+    		"salespersons_priority" : [{
+    			"id" : 0,
+    			"status" : true,
+    			"first_name" : "ibrahim",
+    			"last_name" : "A A",
+    			"sources" : [
+    				{
+    					"id": 1,
+    					"source": "website",
+    					"status": true
+    				},
+    				{
+    					"id": 2966,
+    					"source": "ebay",
+    					"status": false
+    				},
+    				{
+    					"id": 1144,
+    					"source": "FB",
+    					"status": true
+    				}
+    			]
+    		},
+    		{
+    			"id" : 1096,
+    			"status" : true,
+    			"first_name" : "Achraf",
+    			"last_name" : "T T",
+    			"sources" : [
+    				{
+    					"id": 1,
+    					"source": "website",
+    					"status": false
+    				},
+    				{
+    					"id": 2966,
+    					"source": "ebay",
+    					"status": true
+    				},
+    				{
+    					"id": 1144,
+    					"source": "FB",
+    					"status": true
+    				}
+    			]
+    		},
+    		{
+    			"id" : 1097,
+    			"status" : true,
+    			"first_name" : "Ahmed",
+    			"last_name" : "M M",
+    			"sources" : [
+    				{
+    					"id": 1,
+    					"source": "website",
+    					"status": true
+    				},
+    				{
+    					"id": 2966,
+    					"source": "ebay",
+    					"status": false
+    				},
+    				{
+    					"id": 1144,
+    					"source": "FB",
+    					"status": true
+    				}
+    			]
+    		}													
+    		],
+    		"salespersons_randomly" : [
+    		{
+    			"id" : 0,
+    			"status" : true,
+    			"first_name" : "ibrahim",
+    			"last_name" : "A A"
+        	},
+    		  {
+    			"id" : 1096,
+    			"status" : true,
+    			"first_name" : "Achraf",
+    			"last_name" : "T T"
+        	},
+    		  {
+    			"id" : 1097,
+    			"status" : true,
+    			"first_name" : "Ahmed",
+    			"last_name" : "M M"
+        	}
+    		]
+    	},
+    	"auto_assign_task" : {
+    		"active" : true,
+    		"priority" : true,
+    		"randomly" : false,
+    		"salespersons_priority" : [
+    			   {
+                "id": 0,
+                "status": true,
+                "last_name": "",
+                "first_name": "Owner"
+            },
+    			{
+                "id": 1,
+                "status": true,
+                "last_name": "",
+                "first_name": "kokoko"
+            },
+    			{
+                "id": 2,
+                "status": true,
+                "last_name": "",
+                "first_name": "bobobo"
+            }
+    		],
+    		 "salespersons_randomly": [
+            {
+                "id": 0,
+                "status": true,
+                "last_name": "",
+                "first_name": "Owner"
+            }
+    			 ]
+    	}
+    }
+    ```
