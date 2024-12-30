@@ -300,4 +300,15 @@
     {
       The same response of : api/crm/settings
     }
+    Response 1
+    {
+    	"status": {
+    		"code": 400,
+    		"type": "Validation Error",
+    		"message": [
+    			"The auto assign lead.active field is required.",
+    			"The auto assign lead.randomly field is required."
+    		]
+    	}
+    }
     ```
